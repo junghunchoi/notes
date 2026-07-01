@@ -1,3 +1,90 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// ─── 한국어 가독성 ───────────────────────────────────────────
+article {
+  line-height: 1.85;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    margin-bottom: 1.2em;
+  }
+}
+
+// ─── 랜딩 페이지 섹션 카드 ───────────────────────────────────
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0;
+
+  a {
+    display: block;
+    padding: 1.4rem 1.6rem;
+    border-radius: 12px;
+    border: 1px solid var(--lightgray);
+    background: var(--light);
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      border-color: var(--secondary);
+      background: color-mix(in srgb, var(--secondary) 8%, var(--light));
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px color-mix(in srgb, var(--secondary) 20%, transparent);
+    }
+
+    .card-icon {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--dark);
+      display: block;
+    }
+
+    .card-desc {
+      font-size: 0.85rem;
+      color: var(--gray);
+      margin-top: 0.3rem;
+      display: block;
+    }
+  }
+}
+
+// ─── 사이드바 타이틀 ─────────────────────────────────────────
+#quartz-body .page-title a {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+// ─── 인라인 코드 ─────────────────────────────────────────────
+code:not(pre > code) {
+  padding: 0.15em 0.45em;
+  border-radius: 5px;
+  font-size: 0.88em;
+  background: color-mix(in srgb, var(--secondary) 10%, var(--light));
+  color: var(--secondary);
+}
+
+// ─── 링크 hover ──────────────────────────────────────────────
+article a {
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+// ─── 읽기 폭 ────────────────────────────────────────────────
+@media #{$desktop} {
+  .center > article {
+    max-width: 720px;
+  }
+}

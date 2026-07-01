@@ -1,60 +1,29 @@
-# Wiki 인덱스 (핵심 페이지 큐레이션)
-
-> **LLM에게:** 이 파일은 주목할 핵심 페이지만 한 줄 설명과 함께 큐레이션합니다.
-> 전체 목록·통계는 [[Home]]의 Dataview가 자동 생성합니다.
-> 새 페이지 추가 시 중요 페이지만 이 파일에 등록하세요.
-> 형식: `- [[페이지명]] — 한 줄 설명`
-
-마지막 업데이트: 2026-06-27
-
+---
+title: junghun's notes
+publish: true
 ---
 
-## 투자 (investments)
+개발하고, 읽고, 투자하고, 생각합니다.
 
-### 종목
-_아직 없음. 첫 종목 분석 시 추가됩니다._
-
-### 섹터
-_아직 없음._
-
-### 회고
-_아직 없음. 첫 투자 회고 작성 시 추가됩니다._
-
-### 개념
-_아직 없음._
-
----
-
-## 독서 (books)
-
-### 독서록
-- [[이방인]] — 알베르 카뮈 / 부조리와 진정성, 사회 규범에 저항하는 뫼르소의 이야기 (1독 완료)
-
-### 개념
-_아직 없음._
-
----
-
-## 개발 (dev)
-
-### TIL
-_아직 없음. 첫 TIL 작성 시 추가됩니다._
-
-### 프로젝트
-_아직 없음._
-
-### 기술
-_아직 없음._
-
----
-
-## 개인 (personal)
-
-### 회고
-_아직 없음. 첫 회고 작성 시 추가됩니다._
-
-### 목표
-_아직 없음._
-
-### 아이디어
-_아직 없음._
+<div class="section-grid">
+  <a href="/til">
+    <span class="card-icon">📝</span>
+    <span class="card-title">TIL</span>
+    <span class="card-desc">오늘 배운 것들</span>
+  </a>
+  <a href="/메모">
+    <span class="card-icon">🗒️</span>
+    <span class="card-title">메모</span>
+    <span class="card-desc">생각과 기록</span>
+  </a>
+  <a href="/취미">
+    <span class="card-icon">📚</span>
+    <span class="card-title">취미</span>
+    <span class="card-desc">독서 · 관심사</span>
+  </a>
+  <a href="/개인노트">
+    <span class="card-icon">🔒</span>
+    <span class="card-title">개인노트</span>
+    <span class="card-desc">비밀번호 보호</span>
+  </a>
+</div>
